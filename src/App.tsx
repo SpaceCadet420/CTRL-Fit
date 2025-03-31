@@ -10,14 +10,16 @@ import NavBar from './components/NavBar';
 const App: React.FC = () => {
   return (
     <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/inventory" element={<Inventory />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/quests" element={<Quests />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-      </Routes>
+      <div className="p-4 max-w-md mx-auto">
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/inventory" element={<Inventory />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/quests" element={<Quests />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </div>
     </Router>
   );
 };
